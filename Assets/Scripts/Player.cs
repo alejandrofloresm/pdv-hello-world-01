@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         float vertical = Input.GetAxis("Vertical");
-        transform.Translate(new Vector3(0, vertical, 0));
+        float horizontal = Input.GetAxis("Horizontal");
+        transform.Translate(new Vector3(horizontal, vertical, 0));
     }
 }
